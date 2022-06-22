@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="04/27/2022 10:58:26" ReportInfo.Modified="04/27/2022 11:02:07" ReportInfo.CreatorVersion="2013.2.2.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlq5ynO206zVDgpaz3hHlGL83gsMYnE3/CYAy/lAAeE5dFaj9g1lvFYkM6uCL9I5qKNo4XSN92udHs2SE2EQhrTvaEZWp1QYVx2ZovxgGMCC3KCx3AdAe9ZZD4wgL6AHWMqyKUZZ5HnEXZCZ2p5GgFn8t0V9szwDYdP3ymz9LTCr4l996mtYCeypVXdMlvMrrsVlVWrUzx7jetvA3pBYU0LdhJyyMcmoOOQxEI89ipu694=">
+      <TableDataSource Name="AAAA_PRINT_KREDIT" DataType="System.Int32" Enabled="true" TableName="AAAA_PRINT_KREDIT">
+        <Column Name="PRINT_ID" DataType="System.Int32"/>
+        <Column Name="PRINT_AVTOMOBILIN_DEYERI" DataType="System.Double"/>
+        <Column Name="PRINT_KREDIT_MUDDETI" DataType="System.String"/>
+        <Column Name="PRINT_GUZEST_MUDDETI" DataType="System.String"/>
+        <Column Name="PRINT_ILLIK_FAIZ" DataType="System.String"/>
+        <Column Name="PRINT_KREDITIN_MEBLEGI" DataType="System.Double"/>
+        <Column Name="PRINT_AYLIQ_ODEME" DataType="System.Double"/>
+        <Column Name="PRINT_ILKIN_ODENIS" DataType="System.Double"/>
+        <Column Name="PRINT_SIGORTA" DataType="System.Double"/>
+        <Column Name="PRINT_BANK_XIDMETI" DataType="System.Double"/>
+        <Column Name="PRINT_DYP_QEYDIYATI" DataType="System.Double"/>
+        <Column Name="PRINT_SIRA" DataType="System.Int32"/>
+        <Column Name="PRINT_ODEME_TARIXI" DataType="System.DateTime"/>
+        <Column Name="PRINT_KREDITTEN_ODEMELER" DataType="System.Double"/>
+        <Column Name="PRINT_KREDIT_QALIQLARI" DataType="System.Double"/>
+        <Column Name="PRINT_FAIZLERDEN_ODEMELER" DataType="System.Double"/>
+        <Column Name="PRINT_ODENMELI_MEBLEG" DataType="System.Double"/>
+        <Column Name="PRINT_BAZI_TOPLAMLAR" DataType="System.Double"/>
+        <Column Name="PRINT_MUSTERI_ADI_FAMILYASI" DataType="System.String"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text1" Left="28.35" Top="9.45" Width="94.5" Height="18.9" Text="naber laaaaaaaaaaaaaaaaaaaaaa"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35">
+      <TextObject Name="Text3" Left="444.15" Width="94.5" Height="18.9" Text="PRINT_ODEME_TARIXI"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="75.6" DataSource="AAAA_PRINT_KREDIT">
+      <TextObject Name="Text2" Left="444.15" Top="18.9" Width="94.5" Height="18.9" Text="[AAAA_PRINT_KREDIT.PRINT_ODEME_TARIXI]" Format="Date" Format.Format="d"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="153.75" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>
