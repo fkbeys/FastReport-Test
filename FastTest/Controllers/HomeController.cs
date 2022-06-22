@@ -3,9 +3,7 @@ using FastTest.Data;
 using FastTest.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Data;
 using System.Diagnostics;
-using System.Reflection;
 
 namespace FastTest.Controllers
 {
@@ -33,14 +31,14 @@ namespace FastTest.Controllers
 
             myReport.WebReport.Report.Load(path);
             var myEmployeesList = await _context.AAAA_PRINT_KREDIT.ToListAsync();
-          var myConvertedTable = Services.ConvertToDataSet(myEmployeesList, "AAAA_PRINT_KREDIT");
-   
-           
-            myReport.WebReport.Report.RegisterData(myConvertedTable, "Database"); 
+            var myConvertedTable = Services.ConvertToDataSet(myEmployeesList, "AAAA_PRINT_KREDIT");
+
+
+            myReport.WebReport.Report.RegisterData(myConvertedTable, "Database");
             return View(myReport);
 
         }
-         
+
         public IActionResult Privacy()
         {
             return View();
