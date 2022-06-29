@@ -15,7 +15,7 @@ namespace FastTest.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(string isim)
         {
             var myReport = new HomeModel()
             {
